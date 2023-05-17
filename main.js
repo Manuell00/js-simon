@@ -26,7 +26,7 @@ for (let i = 0; i < 5; i++) {
 }
 
 // Richiamo la funzion noneNumbers settandole un tempo
-setTimeout(noneNumbers, 5000);
+setTimeout(noneNumbers, 10000);
 
 // Richiamo al click la funzione verifica numeri
 submit.addEventListener("click", verificaNumeri)
@@ -76,11 +76,11 @@ function verificaNumeri() {
 
     // Stampo a schermo il risultato del punteggio
     risultato.classList.add("space")
-    risultato.innerHTML += `<h5> Il tuo punteggio è ${punteggio}, e i numeri indovinati sono </h5> `
+    risultato.innerHTML += `<h5> Il tuo punteggio è ${punteggio}, e i numeri indovinati sono : </h5> `
 
     // Inserisco a schermo anche i numeri
     const numeri = numeriIndovinati.forEach(numero => {
-        risultato.innerHTML += `<h3 id="indovinato">${numero}, </h3> `
+        risultato.innerHTML += `<h3 id="indovinato">${numero} </h3> `
     });
 
  
